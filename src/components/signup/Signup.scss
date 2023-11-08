@@ -1,0 +1,138 @@
+.main {
+  .left {
+    height: 100vh;
+    background: rgb(40, 167, 0);
+    background: linear-gradient(180deg, #176200 3%, #0aba82 97%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    .logo {
+      width: 130px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    .content {
+      width: 85%;
+
+      @media (max-width: 500px) {
+        width: 95%;
+      }
+      
+      h2 {
+        color: #ffffff;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      h5 {
+        color: #ffffff;
+        font-size: 23px;
+        text-align: center;
+        margin-bottom: 25px;
+        font-weight: 300;
+      }
+      .button-container {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn {
+          border-radius: 40px;
+          width: 70%;
+          min-height: 45px;
+        }
+      }
+    }
+  }
+  .right {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    .content {
+      width: 50%;
+
+      @media (max-width: 1300px) {
+        width: 65%;
+      }
+      @media (max-width: 500px) {
+        width: 95%;
+      }
+
+      h2 {
+        color: #176200;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+      .social-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        i {
+          border: 1px solid #c2c2c2;
+          border-radius: 50%;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+      p {
+        text-align: center;
+        color: #a5a5a5;
+        font-size: 14px;
+      }
+      form {
+        .input-div {
+          position: relative;
+
+          .input-box {
+            border: none;
+            background-color: #e4e4e4bd;
+            padding: 5px 10px 5px 34px;
+            min-height: 38px;
+            width: 100%;
+            margin: 8px 0;
+            border-radius: 3px;
+            font-size: 15px;
+            &:active,
+            &:focus {
+                border: none;
+                outline: none;
+            }
+          }
+          i {
+            position: absolute;
+            left: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            color: #808080;
+          }
+        }
+        .button-container {
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .btn {
+            border-radius: 40px;
+            width: 100%;
+            min-height: 45px;
+          }
+        }
+      }
+    }
+  }
+}
